@@ -1,11 +1,17 @@
 import React from 'react'
+import { Routes, Route, Link } from "react-router-dom";
+import Homepage from './components/Homepage/Homepage';
 
 const App = () => {
   return (
-    <div>
-      <h1>Crypto Cafe Starter Template</h1>
-    </div>
-  )
+		<div>
+		
+			<Routes>
+				<Route path="/" element={<Homepage />} />
+				
+			</Routes>
+		</div>
+  );
 }
 
 export default App
